@@ -163,6 +163,8 @@
 
     .footer__newsletter input {
         width: 80%;
+        margin: 1rem;
+        outline: none;
     }
 
     .footer__newsletter button {
