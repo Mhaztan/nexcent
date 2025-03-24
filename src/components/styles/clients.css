@@ -1,0 +1,20 @@
+.clients {
+  text-align: center;
+  padding: 2rem;
+}
+
+.clients__logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.clients__logos img {
+  width: 80px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Add responsiveness here */

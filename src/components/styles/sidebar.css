@@ -1,0 +1,116 @@
+.menu-icon {
+  display: none; /* Hidden by default on larger screens */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100; /* Ensure it's above the sidebar */
+}
+
+.sidebar {
+  position: fixed; /* Fixed position */
+  top: 0;
+  right: -80000%; /* Initially hidden off-screen */
+  width: 80%;
+  height: 90%;
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow */
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+  z-index: 1000; /* Ensure it's above other content */
+  overflow-y: auto; /* Allow scrolling if content is too long */
+  padding: 20px;
+  display: flex;          /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.sidebar.open {
+  right: 0; /* Slide in when open class is added */
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+    border-radius: 30%;
+    background-color: #bdbebc; /* White background */
+}
+
+.sidebar__nav {
+  flex-grow: 1;  /* Take up remaining space */
+}
+
+.sidebar__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center; /* Center the items horizontally */
+  gap: 1rem; /* Add some space between items */
+  display: flex;          /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  background-color: #fff; /* Default background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+.sidebar__nav li {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar__nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  display: block;         /* Make links fill the space */
+  padding: 0.5rem 0;     /* Add some padding */
+}
+
+.sidebar__button {
+  background-color: #23b339; /* Primary color */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center; /* Center the content */
+  margin-top: 2rem; /* Add some space */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+  }
+
+  .close-icon {
+    display: block; /*Show close icon on mobile*/
+  }
+
+  .sidebar {
+    width: 70%; /* Occupy 80% of the screen width on mobile */
+  }
+}
+
+/* Media Query for Tablet */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Media Query for Desktop: Hidden on desktops*/
+
+@media (min-width: 1024px) {
+  .sidebar {
+    display: none; /* Hide sidebar on desktop */
+  }
+}

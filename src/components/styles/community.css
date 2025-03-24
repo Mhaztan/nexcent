@@ -1,0 +1,27 @@
+.community {
+  text-align: center;
+  padding: 2rem;
+}
+
+.community__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.community__card {
+  width: 300px; /* Adjust as needed */
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.community__icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #23b339; /* Primary color */
+}
+
+/* Add responsiveness here */

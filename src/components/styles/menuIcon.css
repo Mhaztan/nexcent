@@ -1,0 +1,15 @@
+.menu-icon {
+  display: none; /* Hidden by default on larger screens */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it's above the sidebar */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+  }
+}

@@ -1,0 +1,65 @@
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+  }
+
+  .quote-section__image img {
+    width: 200px; /* Adjust as needed */
+    border-radius: 10px;
+  }
+
+  .quote-section__content {
+    max-width: 600px;
+  }
+
+  .quote-section__author {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .quote-section__author-details {
+    color: #555;
+  }
+
+  .quote-section__clients {
+    margin-top: 1rem;
+  }
+
+/* Add responsiveness here */
+@media (max-width: 1024px) {
+  .quote-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .quote-section__content {
+    max-width: 100%;
+  }
+
+  .quote-section__image img {
+    width: 150px; /* Adjusts image size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-section {
+    padding: 2rem 1rem;
+  }
+
+  .quote-section__image img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .quote-section__image img {
+    width: 100px;
+  }
+}
